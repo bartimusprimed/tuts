@@ -4,6 +4,7 @@ from flask_cors import CORS
 from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
+CORS(app)
 app.debug = True
 socketio = SocketIO(app)
 
